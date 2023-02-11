@@ -1,0 +1,25 @@
+nav ul li{
+     display: inline-block;
+     margin: 0 12px;
+     padding: 5px 8px;
+     list-style: none;
+}
+
+nav ul li .link {
+     cursor: pointer;
+     text-decoration: none;
+     color: wheat;
+     font-weight: 600;
+} 
+.navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 85%;
+     margin: 0 auto;
+}
+
+.header {
+     background-color: #3b9bdc;
+     padding: 14px 0;
+}
