@@ -11,6 +11,14 @@ nav ul li .link {
      color: wheat;
      font-weight: 600;
 } 
+
+nav ul li .active {
+     color: black;
+     border-bottom: 2px solid black;
+     transition: border ease-in-out .2s ;
+     /* border-radius: 5px; */
+}
+
 #link-btn {
      background-color: #d849c1;
      color: #0f0f25;
@@ -33,4 +41,8 @@ nav ul li .link {
 .header {
      background-color: #3b9bdc;
      padding: 14px 0;
+}
+
+.container {
+     height: 500px;
 }

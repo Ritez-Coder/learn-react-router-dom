@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "./Style.css"
 function Men() {
   return (
-    <div>
+    <div className='container'>
       Men item.
     </div>
   )

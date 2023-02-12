@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import "./Style.css"
 
 function Header() {
@@ -11,10 +11,10 @@ function Header() {
                </div>
                <nav>
                     <ul>
-                         <li><Link className='link' to="/">Home</Link></li>
-                         <li><Link className='link' to="/shop">Shop</Link></li>
-                         <li><Link className='link' to="/contact">Contact</Link></li>
-                         <li><Link className='link' id='link-btn' to="/auth">Login/Register</Link></li>
+                         <li><NavLink className='link' to="/">Home</NavLink></li>
+                         <li><NavLink className='link' to="#shop">Shop</NavLink></li>
+                         <li><NavLink className='link' to="/contact">Contact</NavLink></li>
+                         <li><NavLink className='link' id='link-btn' to="/auth">Login/Register</NavLink></li>
                     </ul>
                </nav>
           </div>
