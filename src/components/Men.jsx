@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Footer() {
+function Men() {
   return (
     <div>
-      Footer
+      Men item.
     </div>
   )
 }
 
-export default Footer
+export default Men

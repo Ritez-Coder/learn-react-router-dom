@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Footer() {
+function Auth() {
   return (
     <div>
-      Footer
+      REgister and Login
     </div>
   )
 }
 
-export default Footer
+export default Auth;

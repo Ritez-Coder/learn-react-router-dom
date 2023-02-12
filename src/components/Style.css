@@ -1,16 +1,27 @@
 nav ul li{
      display: inline-block;
      margin: 0 12px;
-     padding: 5px 8px;
      list-style: none;
 }
 
 nav ul li .link {
+     padding: 5px 8px;
      cursor: pointer;
      text-decoration: none;
      color: wheat;
      font-weight: 600;
 } 
+#link-btn {
+     background-color: #d849c1;
+     color: #0f0f25;
+     border: 2px solid black;
+     border-radius: 4px;
+}
+#link-btn:hover {
+     cursor: pointer;
+     color: aliceblue;
+     background-color: #a45de7;
+}
 .navbar {
      display: flex;
      justify-content: space-between;

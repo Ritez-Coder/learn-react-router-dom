@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Footer() {
+function Contact() {
   return (
     <div>
-      Footer
+      Contacts///
     </div>
   )
 }
 
-export default Footer
+export default Contact
