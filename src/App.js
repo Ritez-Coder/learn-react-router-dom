@@ -1,32 +1,30 @@
 import React from 'react'
-import { BrowserRouter , Routes , Route } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import "./App.css"
-import Home from './pages/Home'
-import Shop from './pages/Shop'
+import About from './pages/About'
 import Contact from './pages/Contact'
-import Auth from './pages/Auth'
-import SharedLayout from './components/SharedLayout'
+import Home from './pages/Home'
+import HookDetail from './pages/HookDetail'
+import Hooks from './pages/Hooks'
+import SharedLayoit from './pages/SharedLayoit'
 
 function App() {
   return (
+    <div className='App'>
+
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<SharedLayout/>}>
-          <Route index element={<Home/>} ></Route>
-          <Route path='shop' element={<Shop/>} />
-          <Route path='contact' element={<Contact/>} />
-          <Route path='auth' element={<Auth/>} />
-          <Route path='*' element={<Error/>} />
-        </Route>
-      </Routes>
+    <Routes>
+      <Route path='/' element={<SharedLayoit/>}>
+        <Route index element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/hooks' element={<Hooks/>} />
+        <Route path='/hooks/:hookID' element={<HookDetail/>} />
+      </Route>
+    </Routes>
     </BrowserRouter>
+    </div>
   )
 }
 
 export default App
-
-export function Error() {
-  return <div>
-    <h1>404 Not Found</h1>
-  </div>
-}
