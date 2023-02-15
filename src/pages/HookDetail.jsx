@@ -8,12 +8,15 @@ function HookDetail() {
   const navigate = useNavigate();
   return (
     <div className="container">
+      <button className="back-btn" onClick={() => navigate(-1)}>
+     Go Back
+      </button>
       <h2 className="text-center">{name} Hook</h2>
       <div className="detail-card">
         <p>{desc}</p>
         <img src={`${img}`} alt="" />
-        <button onClick={() => navigate("/hooks")}>go back</button>
       </div>
+      <br />
     </div>
   );
 }

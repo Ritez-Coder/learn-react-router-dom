@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { createContext, useState } from 'react'
 import { Outlet } from 'react-router'
 import Navbar from '../components/Navbar'
-import { hooks } from '../hooks'
+import { useLocation } from 'react-router'
+export const Context = createContext(null);
+
 function SharedLayoit() {
-     console.log(hooks)
-  return (
-    <div className='shared-layout'>
-     <Navbar/>
-     <div>
-          <Outlet/>
-     </div>
-    </div>
-  )
+     const location = useLocation();
+     const [isOpen, setIsOpen] = useState(false);
+     return (
+          <div className='shared-layout'>
+               <Context.Provider value={{ isOpen: isOpen, setIsOpen: setIsOpen }}>
+
+                    <p className='url-path'>Current-path : {location.pathname}</p>
+                    <Navbar />
+                    <div>
+                         <Outlet />
+                    </div>
+               </Context.Provider>
+          </div>
+     )
 }
 
 export default SharedLayoit

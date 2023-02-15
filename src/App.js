@@ -11,8 +11,8 @@ import SharedLayoit from './pages/SharedLayoit'
 function App() {
   return (
     <div className='App'>
-
     <BrowserRouter>
+
     <Routes>
       <Route path='/' element={<SharedLayoit/>}>
         <Route index element={<Home/>} />

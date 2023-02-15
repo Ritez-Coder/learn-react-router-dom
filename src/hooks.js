@@ -10,13 +10,13 @@ export const hooks = [
           id : 2 ,
           name : "useLocation()",
           desc: "The useLocation hook returns the current location object. It contains information about the current URL, such as the pathname, search, and hash.",
-          img :""
+          img :"/uselocation.png"
      },
      {
           id : 3,
           name : "useParams()",
           desc: " The useParams hook is used to retrieve parameterized data from the URL. It allows you to access dynamic data from the URL, such as product IDs or usernames.",
-          img :""
+          img :"/useparams.png"
      },
      {
           id:4 ,
