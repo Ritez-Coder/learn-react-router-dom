@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import { useLocation } from 'react-router'
 export const Context = createContext(null);
 
-function SharedLayoit() {
+function SharedLayout() {
      const location = useLocation();
      const [isOpen, setIsOpen] = useState(false);
      return (
@@ -21,4 +21,4 @@ function SharedLayoit() {
      )
 }
 
-export default SharedLayoit
+export default SharedLayout;

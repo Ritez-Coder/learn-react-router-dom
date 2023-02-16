@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useContext } from 'react'
-import { Context } from '../pages/SharedLayoit'
+import { Context } from '../pages/SharedLayout'
 
 function Navbar() {
 
